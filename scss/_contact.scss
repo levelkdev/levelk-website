@@ -1,11 +1,23 @@
 // Styling for the contact section
 section#contact {
-  background-color: $gray-darker;
-  background-image: url('../img/map-image.png');
-  background-repeat: no-repeat;
+  background-color: black;
+  background-repeat: repeat;
   background-position: center;
+  color: white;
+  padding: 80px 0;
   .section-heading {
     color: white;
+  }
+  .email-link {
+    &:hover {
+      text-decoration: none;
+    }
+    color: white;
+    i {
+      color: $theme-primary;
+      display: block;
+      font-size: 40px;
+    }
   }
   .form-group {
     margin-bottom: 25px;
