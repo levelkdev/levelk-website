@@ -41,6 +41,12 @@ section {
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
+
+    width: 680px;
+    margin: 50px auto 100px auto;
+    font-style: normal;
+    font-family: sans-serif;
+
     @include serif-font;
   }
 }

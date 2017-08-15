@@ -1,0 +1,6 @@
+section#about {
+  h3.section-subheading {
+    @include body-font;
+    line-height: 26px;
+  }
+}
