@@ -66,7 +66,9 @@ body {
 
 section#about h3.section-subheading {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 26px; }
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: -30px; }
 
 #mainNav {
   background-color: #222222; }
