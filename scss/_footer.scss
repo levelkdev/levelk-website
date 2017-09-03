@@ -1,11 +1,13 @@
 // Styling for the footer
 footer {
   padding: 25px 0;
-  text-align: center;
   span.copyright {
-    font-size: 90%;
+    margin-top: 50px;
+    display: block;
     line-height: 40px;
     text-transform: none;
+    color: rgba(0, 0, 0, 0.44);
+    font-size: 12px;
     @include heading-font;
   }
   ul.quicklinks {
@@ -14,6 +16,29 @@ footer {
     margin-bottom: 0;
     text-transform: none;
     @include heading-font;
+  }
+  a.footer-btn {
+    &:hover {
+      text-decoration: none;
+    }
+    display: inline-block;
+    background: white;
+    color: black;
+    line-height: 73px;
+    padding: 0 20px;
+    border: 2px solid rgba(0, 0, 0, 0.49);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    img {
+      width: 40px;
+    }
+    span {
+      display: inline-block;
+      margin-left: 8px;
+    }
+  }
+  ul.social-buttons {
+    margin-bottom: 30px;
   }
 }
 

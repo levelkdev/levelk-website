@@ -37,6 +37,10 @@ section {
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
+    width: 680px;
+    margin: 50px auto 100px auto;
+    font-style: normal;
+    font-family: sans-serif;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 @media (min-width: 768px) {
@@ -59,6 +63,12 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #fed136; }
+
+section#about h3.section-subheading {
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: -30px; }
 
 #mainNav {
   background-color: #222222; }
@@ -115,7 +125,7 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -127,13 +137,13 @@ header.masthead {
     padding-top: 150px;
     padding-bottom: 100px; }
     header.masthead .intro-text .intro-heading {
-      font-size: 22px;
+      font-size: 18px;
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-lead-in {
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
@@ -145,13 +155,13 @@ header.masthead {
     padding-top: 300px;
     padding-bottom: 200px; }
     header.masthead .intro-text .intro-heading {
-      font-size: 40px;
+      font-size: 30px;
       font-style: italic;
       line-height: 40px;
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-lead-in {
-      font-size: 75px;
+      font-size: 65px;
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 50px;
@@ -435,12 +445,21 @@ header.masthead {
     margin-top: 0; }
 
 section#contact {
-  background-color: #222222;
-  background-image: url("../img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-color: black;
+  background-repeat: repeat;
+  background-position: center;
+  color: white;
+  padding: 80px 0; }
   section#contact .section-heading {
     color: white; }
+  section#contact .email-link {
+    color: white; }
+    section#contact .email-link:hover {
+      text-decoration: none; }
+    section#contact .email-link i {
+      color: #fed136;
+      display: block;
+      font-size: 40px; }
   section#contact .form-group {
     margin-bottom: 25px; }
     section#contact .form-group input,
@@ -479,12 +498,14 @@ section#contact {
     color: #e74c3c; }
 
 footer {
-  padding: 25px 0;
-  text-align: center; }
+  padding: 25px 0; }
   footer span.copyright {
-    font-size: 90%;
+    margin-top: 50px;
+    display: block;
     line-height: 40px;
     text-transform: none;
+    color: rgba(0, 0, 0, 0.44);
+    font-size: 12px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
   footer ul.quicklinks {
@@ -494,6 +515,24 @@ footer {
     text-transform: none;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
+  footer a.footer-btn {
+    display: inline-block;
+    background: white;
+    color: black;
+    line-height: 73px;
+    padding: 0 20px;
+    border: 2px solid rgba(0, 0, 0, 0.49);
+    border-radius: 8px;
+    margin-bottom: 20px; }
+    footer a.footer-btn:hover {
+      text-decoration: none; }
+    footer a.footer-btn img {
+      width: 40px; }
+    footer a.footer-btn span {
+      display: inline-block;
+      margin-left: 8px; }
+  footer ul.social-buttons {
+    margin-bottom: 30px; }
 
 ul.social-buttons {
   margin-bottom: 0;
