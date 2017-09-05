@@ -10,3 +10,26 @@ section#about {
     }
   }
 }
+
+@media(max-width:768px) {
+  section#about {
+    h3.section-subheading {
+      font-size: 18px;
+      line-height: 26px;
+      text-align: left;
+    }
+  }
+}
+
+@media(max-width:595px) {
+  section#about {
+    h3.section-subheading {
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 35px;
+      margin-bottom: 70px;
+    }
+  }
+}
+
+    

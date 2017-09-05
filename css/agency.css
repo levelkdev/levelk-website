@@ -37,7 +37,7 @@ section {
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
-    width: 680px;
+    max-width: 680px;
     margin: 50px auto 100px auto;
     font-style: normal;
     font-family: sans-serif;
@@ -69,6 +69,19 @@ section#about h3.section-subheading {
   font-size: 22px;
   line-height: 32px;
   margin-top: -30px; }
+
+@media (max-width: 768px) {
+  section#about h3.section-subheading {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left; } }
+
+@media (max-width: 595px) {
+  section#about h3.section-subheading {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 35px;
+    margin-bottom: 70px; } }
 
 #mainNav {
   background-color: #222222; }
