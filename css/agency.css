@@ -85,6 +85,10 @@ section#about h3.section-subheading {
 
 #mainNav {
   background-color: #222222; }
+  #mainNav .levelk-logo {
+    height: 30px;
+    -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s; }
   #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -92,7 +96,7 @@ section#about h3.section-subheading {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fed136;
+    background-color: #1d2d3c;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
   #mainNav .navbar-brand {
@@ -113,11 +117,11 @@ section#about h3.section-subheading {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
     border: none;
     background-color: transparent; }
     #mainNav .navbar-brand {
@@ -130,7 +134,9 @@ section#about h3.section-subheading {
     #mainNav.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: #222222; }
+      background-color: #1d2d3c; }
+      #mainNav.navbar-shrink .levelk-logo {
+        height: 30px; }
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0; } }
@@ -138,7 +144,7 @@ section#about h3.section-subheading {
 header.masthead {
   text-align: center;
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/header-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("../img/banners/desktop.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

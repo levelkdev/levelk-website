@@ -1,5 +1,11 @@
 // Styling for the navbar
 #mainNav {
+  .levelk-logo {
+    height: 30px;
+    -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
   background-color: $gray-darker;
   .navbar-toggler {
     font-size: 12px;
@@ -8,7 +14,7 @@
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: $theme-primary;
+    background-color: $background-color;
     @include heading-font;
   }
   .navbar-brand {
@@ -40,11 +46,11 @@
 }
 @media(min-width:992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
     border: none;
     background-color: transparent;
     .navbar-brand {
@@ -61,9 +67,12 @@
       }
     }
     &.navbar-shrink {
+      .levelk-logo {
+        height: 30px;
+      }
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-darker;
+      background-color: $background-color;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
