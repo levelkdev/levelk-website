@@ -1,5 +1,6 @@
 // Styling for the masthead
 header.masthead {
+  position: relative;
   text-align: center;
   color: white;
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0) ), url('../img/banners/desktop.jpg');
@@ -7,21 +8,44 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   @include background-cover;
+  .big-logo {
+    position: relative;
+    left: -15px;
+    width: 210px;
+  }
   .intro-text {
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 160px;
+    padding-bottom: 140px;
+    .down-link {
+      position: absolute;
+      color: $brand-color;
+      background: $background-color;
+      padding: 15px 23px;
+      font-size: 32px;
+      border-radius: 100px;
+      bottom: 0;
+      margin-left: -25px;
+      margin-bottom: -35px;
+    }
+    .logo-backdrop {
+      background: rgba(29, 45, 60, 0.84);
+      padding: 30px;
+      border-radius: 3px;
+    }
     .intro-heading {
       font-size: 18px;
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
-      @include serif-font;
+      @include body-font;
     }
     .intro-lead-in {
-      font-size: 40px;
-      font-weight: 700;
+      font-size: 25px;
+      font-weight: 100;
+      text-shadow: 2px 2px 12px black;
       line-height: 50px;
       margin-bottom: 25px;
+      text-transform: none;
       @include heading-font;
     }
   }
@@ -29,20 +53,22 @@ header.masthead {
 @media(min-width:768px) {
   header.masthead {
     .intro-text {
-      padding-top: 300px;
+      padding-top: 160px;
       padding-bottom: 200px;
       .intro-heading {
         font-size: 30px;
         font-style: italic;
         line-height: 40px;
         margin-bottom: 25px;
-        @include serif-font;
+        @include body-font;
       }
       .intro-lead-in {
-        font-size: 65px;
-        font-weight: 700;
+        font-size: 25px;
+        font-weight: 100;
+        text-shadow: 2px 2px 12px black;
         line-height: 75px;
         margin-bottom: 50px;
+        text-transform: none;
         @include heading-font;
       }
     }

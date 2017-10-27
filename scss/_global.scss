@@ -28,6 +28,16 @@ h6 {
   @include heading-font;
 }
 
+.logo-text-lg {
+  background: rgb(29, 45, 60);
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 3px;
+  img {
+    width: 90px;
+  }
+}
+
 section {
   padding: 100px 0;
   h2.section-heading {
@@ -37,7 +47,7 @@ section {
   }
   h3.section-subheading {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
@@ -47,7 +57,7 @@ section {
     font-style: normal;
     font-family: sans-serif;
 
-    @include serif-font;
+    @include body-font;
   }
 }
 @media(min-width:768px) {
