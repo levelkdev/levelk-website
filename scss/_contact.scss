@@ -1,64 +1,28 @@
 // Styling for the contact section
 section#contact {
-  background-color: black;
-  background-repeat: repeat;
-  background-position: center;
-  color: white;
   padding: 80px 0;
-  .section-heading {
-    color: white;
-  }
-  .email-link {
+  a.email-link {
+    display: inline-block;
+    line-height: 50px;
+    background: $brand-background;
+    padding: 8px 28px;
+    border-radius: 5px;
     &:hover {
       text-decoration: none;
     }
-    color: white;
+    span {   
+      vertical-align: middle;
+      font-weight: 300;
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.81);
+      padding-left: 8px;
+      letter-spacing: 1px;
+      color: $brand-text;
+    }
     i {
-      color: $theme-primary;
-      display: block;
+      color: $brand-color;
+      vertical-align: middle;
       font-size: 40px;
     }
-  }
-  .form-group {
-    margin-bottom: 25px;
-    input,
-    textarea {
-      padding: 20px;
-    }
-    input.form-control {
-      height: auto;
-    }
-    textarea.form-control {
-      height: 236px;
-    }
-  }
-  .form-control:focus {
-    border-color: $theme-primary;
-    box-shadow: none;
-  }
-  ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: $gray-lighter;
-    @include heading-font;
-  }
-  :-moz-placeholder {
-    font-weight: 700;
-    color: $gray-lighter;
-    /* Firefox 18- */
-    @include heading-font;
-  }
-  ::-moz-placeholder {
-    font-weight: 700;
-    color: $gray-lighter;
-    /* Firefox 19+ */
-    @include heading-font;
-  }
-  :-ms-input-placeholder {
-    font-weight: 700;
-    color: $gray-lighter;
-    @include heading-font;
-  }
-  .text-danger {
-    color: $theme-danger;
   }
 }

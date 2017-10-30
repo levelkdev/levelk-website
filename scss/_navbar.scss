@@ -15,7 +15,7 @@
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: $background-color;
+    background-color: $brand-background;
     @include heading-font;
   }
   .navbar-brand {
@@ -73,7 +73,7 @@
       }
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $background-color;
+      background-color: $brand-background;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;

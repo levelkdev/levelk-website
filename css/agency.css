@@ -492,53 +492,27 @@ header.masthead {
     margin-top: 0; }
 
 section#contact {
-  background-color: black;
-  background-repeat: repeat;
-  background-position: center;
-  color: white;
   padding: 80px 0; }
-  section#contact .section-heading {
-    color: white; }
-  section#contact .email-link {
-    color: white; }
-    section#contact .email-link:hover {
+  section#contact a.email-link {
+    display: inline-block;
+    line-height: 50px;
+    background: #1d2d3c;
+    padding: 8px 28px;
+    border-radius: 5px; }
+    section#contact a.email-link:hover {
       text-decoration: none; }
-    section#contact .email-link i {
-      color: #fed136;
-      display: block;
+    section#contact a.email-link span {
+      vertical-align: middle;
+      font-weight: 300;
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.81);
+      padding-left: 8px;
+      letter-spacing: 1px;
+      color: #f7f5ec; }
+    section#contact a.email-link i {
+      color: #60bb46;
+      vertical-align: middle;
       font-size: 40px; }
-  section#contact .form-group {
-    margin-bottom: 25px; }
-    section#contact .form-group input,
-    section#contact .form-group textarea {
-      padding: 20px; }
-    section#contact .form-group input.form-control {
-      height: auto; }
-    section#contact .form-group textarea.form-control {
-      height: 236px; }
-  section#contact .form-control:focus {
-    border-color: #fed136;
-    box-shadow: none; }
-  section#contact ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  section#contact :-moz-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    /* Firefox 18- */
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  section#contact ::-moz-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    /* Firefox 19+ */
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  section#contact :-ms-input-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  section#contact .text-danger {
-    color: #e74c3c; }
 
 footer {
   padding: 25px 0; }
