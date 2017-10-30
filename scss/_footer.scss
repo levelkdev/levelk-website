@@ -64,6 +64,15 @@ footer {
   .list-inline-item {
     padding: 0 10px;
   }
+
+  .k-right {
+    svg {
+      height: 200px;
+      position: absolute;
+      margin-top: -216px;
+      right: 30px;
+    }
+  }
 }
 
 .zigzag {

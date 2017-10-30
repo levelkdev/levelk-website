@@ -569,6 +569,11 @@ footer {
       top: 11px; }
   footer .list-inline-item {
     padding: 0 10px; }
+  footer .k-right svg {
+    height: 200px;
+    position: absolute;
+    margin-top: -216px;
+    right: 30px; }
 
 .zigzag {
   position: relative;
