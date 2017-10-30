@@ -75,7 +75,8 @@ section#about h3.section-subheading {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 22px;
   line-height: 32px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 150px; }
 
 @media (max-width: 768px) {
   section#about h3.section-subheading {
