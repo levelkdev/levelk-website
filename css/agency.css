@@ -178,7 +178,8 @@ header.masthead {
       border-radius: 100px;
       bottom: 0;
       margin-left: -135px;
-      margin-bottom: -35px; }
+      margin-bottom: -41px;
+      border: 2px solid white; }
     header.masthead .intro-text .intro-heading {
       font-size: 18px;
       font-style: italic;
