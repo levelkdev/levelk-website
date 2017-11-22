@@ -2,6 +2,10 @@
 footer {
   padding: 85px 0 25px 0;
   background-color: $brand-background;
+  .container {
+    position: relative;
+    z-index: 1;
+  }
   span.copyright {
     margin-top: 50px;
     display: block;

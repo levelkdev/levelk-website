@@ -523,6 +523,9 @@ section#contact {
 footer {
   padding: 85px 0 25px 0;
   background-color: #1d2d3c; }
+  footer .container {
+    position: relative;
+    z-index: 1; }
   footer span.copyright {
     margin-top: 50px;
     display: block;
